@@ -7,7 +7,10 @@ function App() {
   const clickHandler = () => {
     setToggle(!toggle);
   }
-
+  // use useEffect hook to change title
+  React.useEffect(() => {
+      document.title = toggle ? "Welcome to Little Lemon" : "Usine the useEffect hook"
+  });
   return (
       <div>
         <h1>USing the useEffect hook</h1>
